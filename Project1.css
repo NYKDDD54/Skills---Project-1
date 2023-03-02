@@ -18,7 +18,11 @@ body {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    box-shadow: 10px 10px;
+}
+
+.topic {
+    box-shadow: 10px 10px 5px black;
+    z-index: 5;
 }
 
 .paddle-white {
@@ -47,7 +51,7 @@ body {
     left: -30vw;
     transition: 0.5s;
 }
-
+/* used by jquery. when clicked on the hamburger menu, change to this class and will toggle the menu. */
 .nav_bar.active {
     left: 0vw;
     position: fixed;
@@ -73,13 +77,13 @@ li {
 .word {
     position: absolute;
     /* text-align: center; */
-    top: 25%;
+    top: 15%;
     width: 100%;
     font-size: 250%;
 }
 
 .canada {
-    padding: 10px;
+    padding: 25px;
 }
 
 .paragraph {
@@ -132,20 +136,26 @@ hr.solid {
     .paragraph {
         width: 100%;
     }
-    /* .nav_bar {
-        position: fixed;
-    } */
     
     .nav_bar.active {
         z-index: 2;
+    }
+
+    .word {
+        z-index: 2;
+        font-size: 250%;
     }
     
 }
 
 /* Below 800px all font sizes change */
 @media only screen and (max-width: 800px) {
-    * {
+    .paragraph {
         font-size: small;
+    }
+
+    .word {
+        font-size: 250%;
     }
 }
 
