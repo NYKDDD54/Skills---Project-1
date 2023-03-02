@@ -127,6 +127,7 @@ hr.solid {
     .canoe {
         width: 100%;
         position:relative;
+        z-index: 1;
     }
     .paragraph {
         width: 100%;
@@ -135,9 +136,9 @@ hr.solid {
         position: fixed;
     } */
     
-    /* .nav_bar.active {
-        position: relative;
-    } */
+    .nav_bar.active {
+        z-index: 2;
+    }
     
 }
 
