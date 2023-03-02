@@ -162,6 +162,10 @@ hr.solid {
     .word {
         font-size: 250%;
     }
+
+    h2 {
+        font-size:x-large;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
